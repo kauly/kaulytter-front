@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/util";
+import axios from "axios";
+
 import { makeStyles } from "@material-ui/styles";
 import { Grid } from "@material-ui/core";
 import io from "socket.io-client";
@@ -51,7 +53,12 @@ export default ({ match, history }) => {
   const getUser = async () => {
     try {
       const localUserName = localStorage.getItem("userName");
-      const request = await API.post("/user/find", { name: localUserName });
+      const token = localStorage.getItem("token");
+      const request = await axios.post(
+        "/user/find",
+        { name: localUserName },
+        { headers: { authorization: `Bearer ${token}` } }
+      );
       setUser(request.data.content);
       if (request.data.content.newUser) {
         setModalType("profile");
