@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const token = localStorage.getItem("token");
-const uri = "http://localhost:5000/api";
+const uri = `${process.env.REACT_APP_API}/api`;
 
 export const API = axios.create({
   baseURL: uri,
