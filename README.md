@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Kaulytter - Front
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This aplication is a fake Twitter profile page, you can edit the profile settings and create tweets. First time users will be redirect to the login page, and there you need to create a user by clicking on the **Sign Up** button. Demo [here](<[https://www.google.com](https://admiring-raman-f33c46.netlify.com/)>).
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Authentication
+- Create users
+- Real time updates
+- Persisted data
+- Protected routes
+- Responsive
+- Profile changes
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To run this project, execute the follow commands:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/kauly/kaulytter-front.git
+```
 
-### `npm run build`
+```
+cd kaulytter-front
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Now create a REACT_APP_API variable with the backend address, inside of .env file.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
+touch .env
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+yarn
+```
 
-### `npm run eject`
+```
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Deploy
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app is hosted by Netlify, demo [here](<[https://www.google.com](https://admiring-raman-f33c46.netlify.com/)>).
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Backend
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Take a look at [here](https://github.com/kauly/kaulytter-back).
