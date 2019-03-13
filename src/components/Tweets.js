@@ -19,6 +19,9 @@ const useStyles = makeStyles({
   },
   content: {
     height: "100%"
+  },
+  load: {
+    textAlign: "center"
   }
 });
 
@@ -43,6 +46,6 @@ export default ({ user }) => {
       </Paper>
     </Fragment>
   ) : (
-    <CircularProgress />
+    <CircularProgress className={classes.load} />
   );
 };
