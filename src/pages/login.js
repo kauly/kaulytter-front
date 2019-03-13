@@ -61,11 +61,12 @@ export default ({ history }) => {
       });
       if (!request.data.success) {
         throw request.data.content;
-      } else {
-        localStorage.setItem("token", request.data.content.token);
-        localStorage.setItem("userName", request.data.content.userName);
       }
-      history.push(`/`);
+      localStorage.setItem("token", request.data.content.token);
+      localStorage.setItem("userName", request.data.content.userName);
+      setTimeout(() => {
+        history.push(`/`);
+      }, 2000);
     } catch (err) {
       setErr(err);
     }
