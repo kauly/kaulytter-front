@@ -69,7 +69,13 @@ export default ({ trigger, userName }) => {
       formData.append(k, v)
     );
     try {
-      const request = await API.post("/user/update", formData);
+      const request = await API.post(
+        `${process.env.REACT_APP_API}/api/user/update`,
+        formData,
+        {
+          headers: { authorization: `Bearer ${localStorage.getItem("token")}` }
+        }
+      );
       setLoading(false);
       trigger(false);
     } catch (err) {

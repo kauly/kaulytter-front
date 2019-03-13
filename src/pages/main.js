@@ -55,7 +55,7 @@ export default ({ match, history }) => {
       const localUserName = localStorage.getItem("userName");
       const token = localStorage.getItem("token");
       const request = await axios.post(
-        "https://floating-ravine-92260.herokuapp.com/api/user/find",
+        `${process.env.REACT_APP_API}/api/user/find`,
         { name: localUserName },
         { headers: { authorization: `Bearer ${token}` } }
       );

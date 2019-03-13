@@ -64,7 +64,14 @@ export default ({ trigger, userName }) => {
 
   const addTwitter = async () => {
     try {
-      await API.post("/user/addtwitter", { content, name: userName });
+      await API.post(
+        `${process.env.REACT_APP_API}/api/user/addtwitter`,
+        { content, name: userName },
+        {
+          headers: { authorization: `Bearer ${localStorage.getItem("token")}` }
+        }
+      );
+
       setLoading(false);
       trigger(false);
     } catch (err) {

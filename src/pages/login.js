@@ -64,9 +64,8 @@ export default ({ history }) => {
       }
       localStorage.setItem("token", request.data.content.token);
       localStorage.setItem("userName", request.data.content.userName);
-      setTimeout(() => {
-        history.push(`/`);
-      }, 2000);
+
+      history.push(`/`);
     } catch (err) {
       setErr(err);
     }
