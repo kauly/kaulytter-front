@@ -2,7 +2,7 @@
 
 ## Overview
 
-This aplication is a fake Twitter profile page, you can edit the profile settings and create tweets. First time users will be redirect to the login page, and there you need to create a user by clicking on the **Sign Up** button. Demo [here](<[https://www.google.com](https://admiring-raman-f33c46.netlify.com/)>).
+This aplication is a fake Twitter profile page, you can edit the profile settings and create tweets. First time users will be redirect to the login page, and there you need to create a user by clicking on the **Sign Up** button. Demo [here](https://admiring-raman-f33c46.netlify.com/)
 
 ## Features
 
